@@ -16,3 +16,5 @@
 //= require turbolinks
 //= require_tree .
 //= require redactor-rails
+//= require jquery.bind_with_delay
+//= require yt_player

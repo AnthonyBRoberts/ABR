@@ -12,6 +12,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'redactor-rails', '~> 0.4.5'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'youtube_it'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
