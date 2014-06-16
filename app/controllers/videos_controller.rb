@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   before_action :signed_in_user, only: [:create, :destroy]
-  
+
   def index
     @videos = Video.order('created_at DESC')
   end
@@ -20,7 +20,10 @@ class VideosController < ApplicationController
   end
 
   def destroy
-    @video.destroy
+    @video = Video.find(params[:id])
+    if @video.present?
+      @video.destroy
+    end
     redirect_to '/videos#index'
   end
 

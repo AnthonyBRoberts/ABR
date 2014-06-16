@@ -61,20 +61,20 @@ describe "Static pages" do
     end
   end
 
-  describe "Help page" do
-    before { visit help_path }
+  describe "About page" do
+    before { visit about_path }
 
-    let(:heading)    { 'Help' }
-    let(:page_title) { 'Help' }
+    let(:heading)    { 'About This Site' }
+    let(:page_title) { 'About' }
 
     it_should_behave_like "all static pages"
   end
 
-  describe "About page" do
-    before { visit about_path }
+  describe "Videos page" do
+    before { visit videos_path }
 
-    let(:heading)    { 'About' }
-    let(:page_title) { 'About' }
+    let(:heading)    { 'Video Demo Reel' }
+    let(:page_title) { 'Videos' }
 
     it_should_behave_like "all static pages"
   end
@@ -92,8 +92,8 @@ describe "Static pages" do
     visit root_path
     click_link "Videos"
     expect(page).to have_title(full_title('Videos'))
-    click_link "Help"
-    expect(page).to have_title(full_title('Help'))
+    click_link "About"
+    expect(page).to have_title(full_title('About'))
     click_link "Contact"
     expect(page).to have_title(full_title('Contact'))
     click_link "Home"

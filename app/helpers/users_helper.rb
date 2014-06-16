@@ -6,4 +6,10 @@ module UsersHelper
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
     image_tag(gravatar_url, alt: user.name, class: "gravatar img-circle")
   end
+
+  def gravatar_main(options = { size: 50 })
+  	gravatar_id = Digest::MD5::hexdigest('roberts.anthony@gmail.com')
+    gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
+    image_tag(gravatar_url, class: "gravatar img-circle")
+  end
 end

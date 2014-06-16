@@ -1,22 +1,20 @@
 <% provide(:title, 'Videos') %>
-
+  <h1>Video Demo Reel</h1>
+    <h2>Click thumbnails to load different videos in the player</h2>
 <% if @videos.any? %>
   <div class="container">
-    <h1>Video Demo Reel</h1>
-    <h2>Click thumbnails to load different videos in the player</h2>
- 
     <div id="player-wrapper"></div>
  
     <% @videos.in_groups_of(3) do |group| %>
       <div class="row">
         <% group.each do |video| %>
           <% if video %>
-            <div class="col-md-4">
+            <div class="span4">
               <div class="yt_video thumbnail">
                 <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title,
                               class: 'yt_preview img-rounded', :"data-uid" => video.uid %>
  
-                <div class="caption">
+                <!--div class="caption">
                   <h5><%= video.title %></h5>
                   <p>Author: <b><%= video.author %></b></p>
                   <p>Duration: <b><%= video.duration %></b></p>
@@ -24,10 +22,12 @@
                     <span class="glyphicon glyphicon glyphicon-thumbs-up"></span> <%= video.likes %>
                     <span class="glyphicon glyphicon glyphicon-thumbs-down"></span> <%= video.dislikes %>
                   </p>
-                </div>
+                </div-->
+                <% if signed_in? %>
                 <%= link_to "delete", video, method: :delete,
                                      data: { confirm: "You sure?" },
                                      title: video.link %>
+                <% end %>
               </div>
             </div>
           <% end %>
