@@ -14,4 +14,8 @@ FactoryGirl.define do
     content "Bacon ipsum"
     user
   end
+
+  factory :video do
+  	link "https://www.youtube.com/watch?v=Pv-Do30-P8A"
+  end
 end

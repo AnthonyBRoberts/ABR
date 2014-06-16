@@ -20,8 +20,6 @@ class Video < ActiveRecord::Base
 	  end
 	end
 
-	
-
 	private
 
 	  def get_additional_info
