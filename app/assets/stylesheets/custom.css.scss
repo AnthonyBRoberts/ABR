@@ -36,18 +36,64 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+.link-container {
+    border: 1px solid;
+    width: 50%;
+    height: 20px;
+}
+
+.link-container a {
+    display: block;
+    background: #c8c8c8;
+    height: 100%;
+    text-align: center;
+}
+
+.link-container a:hover {
+    background: #f8f8f8;
+}
+
 .resp{
     width:130px;
     height:130px;
     float: left;
     margin: 20px;
+    color:red;
+    border-width: 1px;
+
 }
+
+.resp:hover {
+      overflow: hidden;
+      &:hover {
+       text-decoration: none;
+       background-image: -webkit-gradient(
+                            linear,
+                            right top,
+                            left bottom,
+                            color-stop(0.18, #F2E88E),
+                            color-stop(1, #E0A119)
+                          );
+       background-image: -o-linear-gradient(left bottom, #F2E88E 18%, #E0A119 100%);
+       background-image: -moz-linear-gradient(left bottom, #F2E88E 18%, #E0A119 100%);
+       background-image: -webkit-linear-gradient(left bottom, #F2E88E 18%, #E0A119 100%);
+       background-image: -ms-linear-gradient(left bottom, #F2E88E 18%, #E0A119 100%);
+       background-image: linear-gradient(to left bottom, #F2E88E 18%, #E0A119 100%);
+       border-color: #330033;
+       border-width: 1px;
+    }
+
+}
+
 .resp img{
   padding: 20px;
 }
 .resp a{
+  display: block;
   color: #330033;
   text-decoration: none;
+  
 }
 
 
@@ -56,6 +102,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+
 }
 
 h1 {
