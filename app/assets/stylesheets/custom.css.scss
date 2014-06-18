@@ -30,10 +30,27 @@ textarea {
 
 .center {
   text-align: center;
+  width: 630px;
+  margin: 0 auto;
   h1 {
     margin-bottom: 10px;
   }
 }
+.resp{
+    width:130px;
+    height:130px;
+    float: left;
+    margin: 20px;
+}
+.resp img{
+  padding: 20px;
+}
+.resp a{
+  color: #330033;
+  text-decoration: none;
+}
+
+
 
 /* typography */
 
@@ -133,7 +150,6 @@ aside {
 }
 
 .gravatar {
-  float: left;
   margin-right: 10px;
 }
 
@@ -239,8 +255,10 @@ input {
   color: $grayLight;
 }
 .gravatar {
-  float: left;
   margin-right: 10px;
+  width:200px;
+  height:200px;
+
 }
 aside {
   textarea {

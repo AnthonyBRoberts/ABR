@@ -21,7 +21,23 @@
   </div>
 <% else %>
 	<div class="center hero-unit">
-		<%= gravatar_main %>
-		<h1>Anthony Roberts</h1>
+    <%= gravatar_main %><br>
+    <h1>Find Me Online</h1>
+  <div class="row-fluid center">
+    <div class="span12">
+        <div class="well resp">
+        <a href="https://github.com/AnthonyBRoberts" target="_blank"><h4>Github</h4>
+            <%= image_tag "GitHub-Mark-64px.png" %></a>
+          </div>
+          <div class="well resp">
+        <a href="http://stackoverflow.com/users/1319434/anthony-roberts" target="_blank"><h4>Stack Overflow</h4>
+          <%= image_tag "so-icon.png" %></a>
+        </div>
+          <div class="well resp">
+        <a href="https://www.linkedin.com/in/anthonyroberts" target="_blank"><h4>LinkedIn</h4>
+        <%= image_tag "InBug-60px-R.png" %></a>
+      </div>
+    </div>
+  </div>
 	</div>
 <% end %>
