@@ -13,11 +13,13 @@ gem 'redactor-rails', '~> 0.4.5'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'youtube_it'
+gem 'mail_form'
+gem 'simple_form'
 
 group :development, :test do
+  gem 'foreman'
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
-  # The following optional lines are part of the advanced setup.
   gem 'guard-rspec', '2.5.0'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
