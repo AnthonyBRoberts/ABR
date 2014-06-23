@@ -1,3 +1,3 @@
 # Ruby on Rails Example 
 
-This is the code for my personal site, **AnthonyBRoberts.com**[^anthonybroberts.com]
+This is the code for my personal site [<i class="icon-share"></i> anthonybroberts.com](#anthonybroberts.com)
