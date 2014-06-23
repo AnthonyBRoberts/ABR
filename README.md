@@ -1,5 +1,3 @@
-# Ruby on Rails Tutorial: Microposts
+# Ruby on Rails Example 
 
-This is the sample application for
-the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
+This is the code for my personal site, anthonybroberts.com
