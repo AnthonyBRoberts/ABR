@@ -9,11 +9,10 @@ jQuery ->
     $('.yt_preview').first().click()
     return
 
-  $(window).bindWithDelay('resize', ->
+  $(window).on 'resize', ->
     player = $('#ytPlayer')
     player.height(player.width() / 1.777777777) if player.size() > 0
     return
-  , 500)
 
   makeVideoPlayer = (video) ->
     if !window.ytPlayerLoaded
